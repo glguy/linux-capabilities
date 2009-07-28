@@ -1,0 +1,12 @@
+Name:           linux-capabilities
+Version:        0.1
+License:        BSD3
+Author:         Eric Mertens
+Build-type:     Simple
+Cabal-version:	>= 1.2
+
+library
+  exposed-modules: System.Posix.Cap
+  build-depends: unix, base
+  Extensions:	ForeignFunctionInterface, EmptyDataDecls
+  Extra-libraries:	cap
